@@ -1,0 +1,250 @@
+{
+    "id": 1,
+    "name": "demo",
+    "description": "This is the demo form with all the fields and basic configuration so the frontend can understand which kind of data they will receive in the future.",
+    "active": true,
+    "form_id": "demo",
+    "response_receiver_email": null,
+    "createdAt": "2024-01-04T07:39:28.288Z",
+    "updatedAt": "2024-01-04T07:39:31.090Z",
+    "publishedAt": "2024-01-04T07:39:31.078Z",
+    "form_fields": [
+        {
+            "__component": "fc.label-field",
+            "id": 1,
+            "title": "DEMO form title",
+            "description": "Here is the description that will print as the description of the demo label field title.",
+            "style_config": {
+                "width": "W_50",
+                "text_variant": "Heading 3",
+                "font_style": "Italic"
+            }
+        },
+        {
+            "__component": "fc.single-line-input",
+            "id": 1,
+            "basic_config": {
+                "id": 1,
+                "name": "firstName",
+                "label": "First Name",
+                "placeholder": "Please enter your firstname",
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "validation": {
+                "id": 1,
+                "is_required": false,
+                "required_message": "This field is required",
+                "min_length": false,
+                "min_length_value": "2",
+                "min_length_message": "Minimum length should be",
+                "max_length": false,
+                "max_length_value": "2",
+                "max_length_message": "Maximum length should be",
+                "regex": true,
+                "regex_pattern": "/[a-zA-Z]{3,}/",
+                "regex_message": "Please enter valid text"
+            }
+        },
+        {
+            "__component": "fc.radio-buttons",
+            "id": 1,
+            "basic_config": {
+                "id": 2,
+                "name": "radioButtionField",
+                "label": "Gender",
+                "placeholder": null,
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "options": [
+                {
+                    "id": 1,
+                    "label": "Male"
+                },
+                {
+                    "id": 2,
+                    "label": "Female"
+                }
+            ],
+            "validation": null
+        },
+        {
+            "__component": "fc.paragraph-text",
+            "id": 1,
+            "max_rows": 3,
+            "basic_config": {
+                "id": 3,
+                "name": "userBio",
+                "label": "User bio",
+                "placeholder": "Write something about you...",
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "validation": null
+        },
+        {
+            "__component": "fc.number",
+            "id": 1,
+            "basic_config": {
+                "id": 4,
+                "name": "experience",
+                "label": "How many years of experience do you have?",
+                "placeholder": "2",
+                "auto_focus": false,
+                "disabled": true,
+                "default_value": "4"
+            },
+            "validation": null
+        },
+        {
+            "__component": "fc.multi-select",
+            "id": 1,
+            "basic_config": {
+                "id": 5,
+                "name": "skills",
+                "label": "Your skills",
+                "placeholder": null,
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "validation": {
+                "id": 2,
+                "is_required": false,
+                "required_message": "This field is required",
+                "min_length": false,
+                "min_length_value": null,
+                "min_length_message": "Minimum length should be",
+                "max_length": false,
+                "max_length_value": null,
+                "max_length_message": "Maximum length should be",
+                "regex": false,
+                "regex_pattern": null,
+                "regex_message": "Please enter valid text"
+            },
+            "options": [
+                {
+                    "id": 3,
+                    "label": "React Js"
+                },
+                {
+                    "id": 4,
+                    "label": "Node Js"
+                },
+                {
+                    "id": 5,
+                    "label": "Express Js"
+                },
+                {
+                    "id": 6,
+                    "label": "Javascript"
+                },
+                {
+                    "id": 7,
+                    "label": "Typescript"
+                }
+            ]
+        },
+        {
+            "__component": "fc.hidden",
+            "id": 1,
+            "basic_config": {
+                "id": 6,
+                "name": "token",
+                "label": "token",
+                "placeholder": null,
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": "SECRET_TOKEN"
+            }
+        },
+        {
+            "__component": "fc.dropdown",
+            "id": 1,
+            "options": [
+                {
+                    "id": 8,
+                    "label": "GUJARAT"
+                },
+                {
+                    "id": 9,
+                    "label": "RAJASTHAN"
+                },
+                {
+                    "id": 10,
+                    "label": "MAHARASTRA"
+                },
+                {
+                    "id": 11,
+                    "label": "MP"
+                },
+                {
+                    "id": 12,
+                    "label": "UP"
+                }
+            ],
+            "basic_config": {
+                "id": 7,
+                "name": "state",
+                "label": "Select your state",
+                "placeholder": null,
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "validation": null
+        },
+        {
+            "__component": "fc.check-boxes",
+            "id": 1,
+            "basic_config": {
+                "id": 8,
+                "name": "favouriteTravelDestination",
+                "label": "Select your Favourite Destination",
+                "placeholder": null,
+                "auto_focus": false,
+                "disabled": false,
+                "default_value": null
+            },
+            "options": [
+                {
+                    "id": 13,
+                    "label": "Mumbai"
+                },
+                {
+                    "id": 14,
+                    "label": "Gift City"
+                },
+                {
+                    "id": 15,
+                    "label": "Ladakh"
+                },
+                {
+                    "id": 16,
+                    "label": "Goa"
+                },
+                {
+                    "id": 17,
+                    "label": "Canada"
+                }
+            ],
+            "validation": null
+        }
+    ],
+    "createdBy": {
+        "id": 18,
+        "firstname": "Rupen",
+        "lastname": "",
+        "username": null
+    },
+    "updatedBy": {
+        "id": 18,
+        "firstname": "Rupen",
+        "lastname": "",
+        "username": null
+    }
+}
